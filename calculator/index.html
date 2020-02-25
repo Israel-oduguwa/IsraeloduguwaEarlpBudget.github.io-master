@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>     
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+        <div id="earlp-logo">
+                <a  id="back-arrow" href="..//index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                <h1>EARLP Calculator<i class="fa fa-soundcloud" aria-hidden="true"></i></h1>
+                <div class="hamburger"><i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true"></i></div>
+            </div>
+            <div class="nav-barmobile text-center">
+                <ul class="nav-linksmobile">
+                        <li><a href="#nav-head">HOME</a></li>
+                        <li><a href="..//budgetapp.html">BUDGET APP</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="calculator/index.html">CALCULATOR</a></li>
+                </ul>
+                
+            </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">       
+                <br>               
+                <br>          
+                  <label class="switch" id="opener">
+                        <input type="checkbox" id="toggle-button">
+                        <span class="slider round"></span>
+                      </label>
+                         <br>
+                         <br>
+                    <div class="colorChanger">
+                    <div id="color1"></div>
+                    <div id="color2"></div>
+                    <div id="color3"></div>
+                    </div>
+                    <div class="calculator">
+                            <div id="result">
+                                <div id="history">
+                                    <p id="history-value"></p>
+                                </div>
+                                <div id="output">
+                                    <p id="output-value"></p>
+                                </div>
+                            </div>
+                            <div class="keyboard">
+                                <button class="operator" id="clean">C</button>
+                                <button class="operator" id="backspace">del</button>
+                                <button class="operator" id="">%</button>
+                                <button class="operator" id="+"style="background: gold">+</button>
+                                <button class="number" id="9">9</button>
+                                <button class="number" id="8">8</button>
+                                <button class="number" id="7">7</button>
+                                <button class="operator" id="-" style="background: rgb(253, 255, 112)">-</button>
+                                <button class="number" id="6">6</button>
+                                <button class="number" id="5">5</button>
+                                <button class="number" id="4">4</button>        
+                                <button class="operator" id="*"style="background:teal">&times</button>
+                                <button class="number" id="3">3</button>
+                                <button class="number" id="2">2</button>
+                                <button class="number" id="1">1</button>    
+                                <button class="operator" id="/" style="background: rgb(253, 123, 48)">/</button>
+                                <button class="number" id="0">0</button>
+                                <button class="operator" id=".">.</button>
+                                <button class="operator" id="**" >^</button>
+                                <button class="operator" id="equal" style="background: rgb(149, 233, 251)">=</button>
+                            </div>
+
+                        </div> 
+                        <br>
+                        <div class="copyright">C israel oduguwa 2019</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

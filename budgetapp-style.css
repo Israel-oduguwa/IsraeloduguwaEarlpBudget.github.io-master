@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+        
+    list-style: none;
+    text-decoration: none!important;
+    text-decoration-line: none!important;
+}
+#head-nav{
+    width: 100%;
+    background: rgba(9, 16, 75, 0.8);
+    height: 15vh;
+    color: white;  
+}
+body{
+    transition: all 1s ease-in-out;
+   
+}
+.income-title{
+    background: rgba(9, 16, 75, 0.8);
+    color: white;
+    font-size: 3vh;
+}
+.expenses-title{
+    background: rgba(9, 16, 75, 0.8);
+    color: white;
+    font-size: 3vh;
+}
+.earlp-logo{
+    
+}
+.back-arrow-button{
+    display: none;
+}
+ .hamburger{
+    display:none
+ }
+ .budget-name{
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+     font-style: italic;
+ }
+ .head-logo{
+
+ }
+@media only screen and (max-width:760px){
+    #head-nav{
+        width: 100%;
+        background:rgba(9, 16, 75, 0.8);;
+        height: 10vh;
+        color: white;  
+        font-family:'Pacifico', cursive;
+
+
+    }
+    .head-logo{
+        font-size: 2vh;
+    }
+    .head-logo a{
+        font-size: 1vh;
+    }
+    .back-arrow-button{
+        display: block!important;
+        font-family: 'Playfair Display', serif!important;
+        font-stretch: expanded;
+        font-size: 3vh;
+        cursor: pointer;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-around;
+    }
+    #hamburger{
+        display: block!important;
+
+       margin-left: auto;
+
+    }
+    .logo{
+        margin: 1vh;
+        display: flex;
+    }
+    .logo-text{
+        font-family: serif;
+        font-size: inherit;
+        font-family: 'Playfair Display', serif!important;
+    }
+    #profile-name{
+        width: auto!important;
+        border-radius: 3px solid white ;
+        box-shadow: none;
+        border: none;
+        border-bottom: 0.7px solid black;
+    }
+    #submit-name{
+        background: rgb(3, 125, 212)!important;
+        border: none;
+        color: white;
+        font-family: 'Playfair Display', serif;
+        border-radius:2px; 
+         box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+         text-decoration: none;
+         
+    }
+    #currency-input{
+        font-size: 2.5vh;
+        width: 10vh!important;
+        border-radius: 3px solid white ;
+        box-shadow: none;
+        border: none;
+        border-bottom: 0.7px solid black;
+        
+    }
+    
+#main-app{
+    width: 100%;
+    height: auto;
+    display: none;
+    transition: all 5s ease-in-out;
+   
+    font-family:"Poppins";
+    background: rgba(178, 185, 229, 0.8);
+}
+}
+.currency-style{
+    border-radius: 3px solid white ;
+    box-shadow: none;
+}
+.logo{
+    margin: 2vh;
+    display: flex;
+}
+.logo-text{
+    font-family: serif;
+    
+}
+.home a{
+    color: white;
+    transition: all 1s ease-in-out;
+}
+.welcome-title{
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+.home a:hover{
+    color: rgb(169, 177, 16);
+    font-size: 3vh;
+}
+/* REGITERATION OF NAME*/
+#budget-welcome{
+    width: 100%;
+    align-content: center;
+    margin-top: 35vh; 
+    transition-delay: 2s;
+  
+    transition: all 2s ease-in-out;
+}
+.welcome-title{
+    letter-spacing: 3vh;
+}
+#profile-name{
+    width: 80vh;
+    border-radius: 3px solid white ;
+    box-shadow: none;
+}
+#submit-name{
+    background: rgb(90, 87, 87);
+    border: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    border-radius:2px; 
+     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+     text-decoration: none;
+     
+}
+#budget-welcome.nameEntered{
+    display: none;
+}
+#main-app{
+    width: 100%;
+    display: none;
+    transition: all 5s ease-in-out;
+   
+    font-family:"Poppins";
+    background: rgba(178, 185, 229, 0.8);
+}
+#main-app.show{
+    display: block;
+}
+.greetings{
+    margin-top: 6vh;
+}
+.man{
+    color: green;
+}
+.income-form{
+    padding: 2vh;
+}
+.welcome-greetings{
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3vh;
+}
+.income-form-title{
+    font-size: 2.6vh;
+}
+.income-info{
+    margin-left: 4px;
+    font-family: 'Playfair Display', serif!important;
+}
+.salary-input-form{
+    display: flex;
+    justify-content: space-evenly;
+}
+.salary-submit{
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+.expenses{
+    padding: 2vh;
+}
+.add-expense{
+    border: 1px solid black;
+}
+.total-income-space{
+    display: flex;
+    justify-content: space-around;
+}
+.salary-input-feedback{
+    display: none;
+}
+.showGreen{
+    color: green;
+}
+.bankrupt{
+    color: rgb(251, 4, 4);
+}
+.showblack{
+    color: black;
+}
+#help-button-show{
+    display: none;
+}
+#financial-help{
+    width: 100%;
+    border: 1px solid black;
+    background: rgb(95, 92, 92);
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    left: 0;
+    display: none;
+}
+#financial-help a{
+    color: rgb(229, 230, 233);
+}
+#financial-help.see{
+ display: block;
+}
+.help-button{
+    cursor: pointer;
+  
+}
+#help-button-show.help{
+    display: block;
+}

@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none!important;
+    text-decoration-line: none!important;
+}
+body{
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    transition: all 1s ease-in-out;
+}
+#nav-head{
+    width: 100%;
+   background-image:linear-gradient(rgba(9, 16, 75, 0.8), rgba(35, 4, 14, 0.9)),url(images/home-backgroundpc.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 50vh;
+    color: white;
+    
+  
+}
+.help{
+    letter-spacing: 1px;
+    font-family: "Poppins",sans-serif;
+}
+#earlp-logo{
+    margin-left: 40px!important;
+}
+.earlp-logo h1{
+    font-family:'Pacifico', cursive;
+}
+#nav-bar{
+    background:rgba(53, 60, 127, 0.9);
+    border-radius: 4px;
+    width: 100%;
+    height: 12vh;
+    float: right !important;
+}
+#nav-bar-pc{
+    background:rgba(53, 60, 127, 0.9);
+    border-radius: 4px;
+    width: 100%;
+    height: 12vh;
+    float: right !important;
+    display: none;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    margin-left:auto; 
+    margin-top: 4vh!important;
+    
+}
+.get-started{
+    display: none;
+}
+#nav-bar li a{
+    color: white;
+    text-decoration-line: none;
+    transition: all 1s ease-in-out
+}
+
+#nav-bar-pc li a{
+    color: white;
+    text-decoration-line: none;
+    transition: all 1s ease-in-out
+}
+
+#nav-bar li a:hover{
+    color:gold;
+    font-size: 3vh;
+}
+#nav-bar-pc li a:hover{
+    color:gold;
+    font-size: 3vh;
+}
+
+.stickyPc{
+    top: 0;
+    position:fixed;
+    z-index: 999;
+    display: block!important;
+}
+.hamburger{
+    display: none;
+}
+.nav-barmobile{
+    display: none;
+}
+@media only screen and (max-width:760px){
+    .nav-bar{
+        display: none;
+    }
+    .privacysvg{
+        display: none;
+    }
+    #earlp-logo{
+        display: flex;
+        justify-content: space-around;
+    }
+    #earlp-logo h1{
+        font-family:'Pacifico', cursive;
+        font-size: 4vh;
+    }
+    .hamburger{
+        display: flex;
+        font-size: 3vh;
+        cursor: pointer;
+    }
+    .get-started{
+        margin-top:20vh;
+        display: block;
+        align-content: center; 
+    }
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+       background: rgba(9, 16, 75, 1);
+        z-index: 9999;
+        transition: all 1s ease-in
+    }
+    .get-startbutton{
+        border: 0.1px solid #4e72d4;
+        background:#4e72d4;
+        color: white;
+        height: 6vh;
+        text-align: center;
+        
+    }
+    .get-startbutton:hover{
+        background: deepskyblue;
+    }
+    #footer{
+        background:rgba(9, 16, 75, 0.8);
+        margin-top: 9vh;
+        height: 54vh!important;
+        font-family: "Poppins",sans-serif;
+        width: 100%;
+        font-size: 2vh;
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: none;
+    }
+#earlp-logo{
+    margin-left: 0px!important;
+}
+    .app-info h4{
+        color: white;
+        font-weight: 600;
+        margin-top:30vh;
+        font-family: 'Poppins', serif!important;
+        font-size: 3.5vh!important;
+        text-align: center;
+        letter-spacing: 2px;
+        ransition: all 1s ease-in-out;
+    }
+    #nav-bar{
+        display: none;
+    }
+    #nav-bar-pc{
+        background:rgba(53, 60, 127, 0.9);
+        border-radius: 4px;
+        width: 100%;
+        height: 12vh;
+        float: right !important;
+        display: none;
+    }
+    .app-info h4:hover{
+        color: rgb(243, 200, 200);
+    }
+    .nav-barmobile{
+        display: block!important;
+        z-index: 999; 
+       align-items: center!important;
+    }
+    .stickyPc{
+        top: 0;
+        position:fixed;
+        z-index: 999;
+        display: none!important;
+    }
+    .nav-linksmobile{
+        width: 90%;
+        border-radius: 2px;
+        height: 50vh;
+        position: fixed;
+        background: rgba(9, 16, 75, 0.91);
+        display: flex;
+        justify-content: space-around;
+        z-index: 1; 
+        flex-direction: column;
+        clip-path: circle(100px at 90% -45%)!important;
+        -webkit-clip-path: circle(100px at 90% -45%)!important;
+        transition: all 1s ease-out;        
+        
+    }
+    .fill{
+        height:43px ;
+    }
+    .nav-linksmobile.open{
+        clip-path: circle(800px at 90% -26%)!important;
+        -webkit-clip-path: circle(800px at 90% -26%)!important;
+    }
+    .nav-linksmobile li a{
+        color: white;
+        font-size: 2.4vh;
+        margin-top: 25vh!important;
+        transition: all 1s ease-in-out
+    }
+    .nav-linksmobile li a:hover{
+        color: white;
+        font-size: 3vh;
+        margin-left: 2vh;
+    }
+
+#nav-head{
+    width: 100%;
+    background-image: linear-gradient(rgba(9, 16, 75, 0.8), rgba(35, 4, 14, 0.9)),url(images/home-background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+  
+}
+    #email-input{
+        width: auto!important;
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid white;
+        box-shadow: none!important;
+        color: white;
+        font-size: 2vh;
+        
+    }
+}
+.app-info h4{
+    font-family: 'Poppins', serif;
+    font-size: 3vh;
+}
+#info-mission{
+    margin-top:9vh;
+}
+.brain-info{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.7s ease-in-out;
+    background: whitesmoke;
+    border: 0.1px solid black;
+}
+.brain-info2{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.7s ease-in-out;
+    background: whitesmoke;
+    border: 0.1px solid black;
+}
+.card-top{
+    background: rgb(1, 1, 61);
+    height: 1.7vh;
+    border-radius: 1px;
+    transition: all 0.4s ease-in-out;
+}
+.card-top:hover{
+    background:black;
+}
+.card-top2{
+    background: rgb(1, 1, 61);
+    height: 1.7vh;
+    border-radius: 1px;
+    transition: all 0.4s ease-in-out;
+}
+.card-top2:hover{
+    background:green;
+}
+.brain-info:hover{
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1, 1.01);
+    box-shadow: 0 5px 15px rgba(6, 5, 12, 0.3);
+}
+
+.brain-info2:hover{
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1, 1.01);
+    box-shadow: 0 5px 15px rgba(6, 5, 12, 0.3);
+}
+.brain-quotes{
+    color: grey;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Rajdhani', sans-serif;
+    margin-left:8px;
+}
+#services{
+    margin-top: 9vh;
+}
+#footer{
+    background:rgba(9, 16, 75, 0.8);
+    margin-top: 9vh;
+    height: 39vh;
+    font-family: "Poppins",sans-serif;
+    width: 100%;
+    font-size: 2.4vh;
+}
+.footer-columns{
+    display: flex;
+    justify-content: space-around!important;
+    flex: 1;
+    color: white;
+}
+
+.facebook{
+    color: white;
+}
+.instagram{
+    color: white;
+}
+.twitter{
+    color: white;
+}
+.email{
+    color: white;
+}
+

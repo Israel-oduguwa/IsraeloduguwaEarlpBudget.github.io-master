@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Rajdhani&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i|Roboto:400,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rouge+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans|Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="budgetapp-style.css">
+    <title>Budget</title>
+</head>
+<body>
+    <div id="head-nav">
+     <!----   <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                        <div class="back-arrow-button">
+                                <a href="index.html"><i style="color: white;" class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                             </div>
+                </div>
+                <div class="col-md-6">          
+                <div class="logo">             
+                                <h1>EARLP <i class="fa fa-soundcloud" aria-hidden="true"></i></h1>
+                                <div class="hamburger"><i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true"></i></div>
+                            </div>
+                       <div id="hamburger">
+                           <i class="fa fa-bars" aria-hidden="true"></i>
+                       </div>
+                    </div>
+                </div>!-->     
+                <br>
+                <div id="earlp-logo">
+                        <h1 class="head-logo">
+                            <a href="index.html">
+                                <i  style="font-size: 3vh;" class="fa fa-arrow-left" aria-hidden="true">
+                                </i></a>   EARLP Budget <i class="fa fa-soundcloud" aria-hidden="true"></i></h1>
+                        <div class="hamburger"><i style="cursor: pointer;" class="fa fa-bars" aria-hidden="true"></i></div>
+                    </div>
+            </div>
+    <section id="budget-welcome">
+        <div class="container text-center items-center">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="welcome-title">EARLP <i class="fa fa-cloud" aria-hidden="true"></i></h1>
+                
+                        <p id="welcome-feedback" style="color: red;"></p>
+                        <input type="text" placeholder="Enter full name" id="profile-name">
+                        <input type="text" placeholder="curr ie $" id="currency-input" class="currency-style">
+                        <label><p id="submit-name" >submit</p> </label>         
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-app">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <div class="greetings">
+                        <h3 id="welcome-greeting" class="welcome-greetings"></h3>
+                        <div id="help-button-show">
+                                <div class="help-button" style="color: red">
+                                    <i class="fa fa-user" aria-hidden="true"> bankrupt click for help</i>
+                                </div>
+                                </div>
+                        <div id="financial-help">
+                                <div class="conatiner">
+                                    <div class="row text-center" >
+                                        <div class="col-md-12">
+
+                                            <p class="financial-advice">
+                                                Check our <a href="">financial tips</a> to stay out of dept
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6" style="margin-top: 5vh; border-right: 2px solid rgba(9, 16, 75, 0.8)">
+                  <form id="income-form" class="income-form" style="background: ">
+                    <div class="income-form-title text-center">
+                        <h3 class="income-title">INCOME</h3>                    
+                    </div>
+                    
+                        <h6>Cash Flow</h6>
+                        <p class="salary-feedback" style="color: red;"></p>
+                   <input style="background: rgb(204, 204, 233)" type="number" class=" form-control salary-input " id="salary-input">
+                   <button type="submit" class="btn text-capitalize salary-submit" id="salary submit">Calculate</button>
+                 </form>
+                  
+              </div>
+              <div class="col-md-6 ">
+                  <h3 class="cash-text text-center">Cash  <span id="currency1"></span><span id="remaining-cash"> 0</span></h3>
+                  <div class="total-income-space">
+                 <h6 class="total-income">Total Income:</h6>
+                 <p id="currency"><span id="currency2"></span> <span id="total-income">0</span></p>
+                    </div>
+              
+                  <div class="total-income-space">
+                 <h6 class="total-expenses">Total Expenses:</h6>
+                 <p id="currency"> <span id="currency3"></span> <span id="total-expenses" style="color: red;">0</span></p>
+                    </div>
+                    <div class="total-income-space">
+                      <h6 class="total-income">Remaining Amount:</h6>
+                        <p id="currency"><span id="currency4"></span> <span id="total-amount">0</span></p>
+                      
+                 </div>
+            
+              </div>   
+              </div> 
+          </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6" style="margin-top: 5vh; border-right: 2px solid rgba(9, 16, 75, 0.8)">
+                 <form id="expenses-form" class="expenses text-center">
+                        <div class="expenses-form-title text-center">
+                                <h3 class="expenses-title">Expenses</h3>                    
+                            </div>
+                            <div class="expense-items">
+                                    <p class="expenses-feedback" style="color: red;"></p>
+                        <h6 class="">Enter expenses</h6>
+                
+                        <input style="background: rgb(204, 204, 233)" type="text" id="expenses-input" class="form-control expenses-style">
+                            </div>
+                            <div class="expense-amount-form">
+                                <h6 class="">Amount</h6>
+                               
+                                <input style="background: rgb(204, 204, 233)" type="number" id="expenses-amount" class="form-control expenses-amount">
+
+                            </div>
+                            <button type="submit" class="btn text-capitalize add-expense" id="add-expense" style="margin-top: 2vh;">add Expense</button>
+                 </form>
+              </div>
+              <div class="col-md-6">
+                <div id="expenses-list" class="expenses-list">
+                    <div class="expenses-list-info d-flex justify-content-between">
+                        
+                        <h5 class="list-item"> Expenses list  <i class="fa fa-book" aria-hidden="true"></i><span id="currency5"></span></h5>
+                   <br>
+                   <br>
+                    </div>                  
+                </div>
+                
+              </div>
+          </div>
+      </div>   
+    </section>
+    
+    <script src="app.js"></script>
+  
+</body>
+</html>
